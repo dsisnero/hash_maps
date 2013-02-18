@@ -1,0 +1,9 @@
+.rspec
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/hash_extensions.rb
+spec/hash_extensions_spec.rb
+spec/spec_helper.rb
+
