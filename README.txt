@@ -1,22 +1,24 @@
-= hash_extensions
+= hash_maps
 
 * https://github.com/dsisnero/hash_maps.git
 
 == this is intended to be an extension for hash.  It adds the
 following methods
 
-* map_key
+* map_keys
 require 'hash_extensions'
-{ :key => "value"}.map_key{|k| k.to_s}  
+{ :key => "value"}.map_keys{|k| k.to_s}  
 => {"key" => "value"}
 
-{ :key => "value"}.map_value{|v| v*2}
+* map_values
+{ :key => "value"}.map_values{|v| v*2}
 => { :key => "valuevalue"}
 
+* map_kv
 { :key => "value", "k2" => 3}.map_kv{ |k,v| [k.to_s,v.to_s]}
 => {"key"=>"value", "k2" => "3"}
 
-* (sudo gem install, anything else)
+* (sudo gem install)
 
 == DEVELOPERS:
 
